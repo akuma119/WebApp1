@@ -54,5 +54,10 @@ namespace WebApp1
 
             app.UseMvc();
         }
+
+        public string Unipedia(int id)
+        {
+            return id.ToString();
+        }
     }
 }
