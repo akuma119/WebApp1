@@ -1,19 +1,23 @@
 ﻿@page
 @model ContactModel
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Unicorn Apps";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<span class="header" style="font-size:70px">@ViewData["Title"]  </span>
+<span class="header" style="font-size:30px">  Enjoy the magic!</span>
+<br />
+<br />
+<h2>Love Detector</h2>
+<p>
+    press the button to see if you will have good luck in love
+    <input type="button" class="awesomebutton" onclick="Love()" value="Get Love" />
+    <span id="resultlove" class="result">.</span>
+</p>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<br />
+<h2>Unicorn Name Generator</h2>
+<p>
+    press the button and get an awesome and colorful name!
+    <input type="button" class="awesomebutton" onclick="UnicornName()" value="Get Name" />
+    <span id="resultname" class="result">.</span>
+</p>
